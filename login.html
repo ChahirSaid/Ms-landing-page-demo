@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .parent-box {
+            width: 350px;
+            height: 600px;
+        }
+
+        .icon {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            margin-bottom: 24px;
+            text-align: center;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .login-box {
+            background-color: #161b22;
+            width: 100%;
+            padding: 15px 16px 18px 16px;
+            border: 1px solid #21262d;
+            border-radius: 7px;
+        }
+
+        .input-box {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 12px;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        label a {
+            font-size: 14px;
+            color: #1e83f2;
+            text-decoration: none;
+        }
+
+        input {
+            width: 100%;
+            padding: 7px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #21262d;
+            outline: none;
+            transition: all 0.1s linear;
+            background-color: #0d1117;
+            color: #fff;
+        }
+
+        input:focus {
+            border: 2px solid #2083f7;
+        }
+
+        input.btn {
+            font-size: 18px;
+            background-color: #2083f7;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .signup {
+            width: 100%;
+            margin: 18px 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #21262d;
+            border-radius: 7px;
+        }
+
+        .signup span {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .signup a {
+            font-size: 14px;
+            padding-left: 3px;
+            text-decoration: none;
+            color: #1e83f2;
+        }
+
+        @media (max-width: 768px) {
+            .parent-box {
+                width: 80%;
+            }
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="parent-box">
+        <div class="icon">
+            <a href="./index.html">
+                <img src="Mood.png" alt="MoodSculpt">
+            </a>
+        </div>
+        <header>Sign in to MoodSculpt</header>
+        <div class="login-box">
+            <div class="input-box">
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="input-box">
+                <label for="password">
+                    <span>Password</span>
+                    <a href="#">Forgot Password?</a>
+                </label>
+                <input type="password" id="password" name="password">
+            </div>
+            <input type="submit" class="btn" value="Sign in">
+        </div>
+        <div class="signup">
+            <span>New to MoodSculpt</span>
+            <a href="./signup.html">Create an account</a>
+        </div>
+    </div>
+</body>
+</html>

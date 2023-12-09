@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --primary-color: #669ccb;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+    
+    .section__container {
+        padding: 5rem 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .section__title {
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .section__subtitle {
+        font-size: 1rem;
+        font-style: italic;
+        color: var(--primary-color);
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    nav {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 2rem 1rem;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .nav__logo a {
+        text-decoration: none;
+        color: #f3f4f6;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .nav__links {
+        display: none;
+        list-style: none;
+        align-items: center;
+        gap: 2rem;
+    }
+    a{
+        text-decoration: none;
+    }
+    .link {
+        color: #f3f4f6;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    .link:hover {
+        color: var(--primary-color);
+    }
+      header {
+        height: 100vh;
+        background: url("bg-1.jpg") center center no-repeat;
+        background-size: cover;
+      }
+      
+      header .section__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        color: #f3f4f6;
+    }
+    
+    .header__content h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 5rem;
+    }
+    
+    .header__content p {
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .header__content .button {
+        padding: 1rem 2rem;
+        outline: none;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: transparent;
+        color: #f3f4f6;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .header__content .button:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    
+    @media (min-width: 640px) {
+        .nav__links {
+            display: flex;
+        }
+    
+        header .section__container {
+            justify-content: flex-start;
+        }
+    
+        .header__content {
+            max-width: 700px;
+            align-items: flex-start;
+        }
+    
+        .header__content p {
+            text-align: left;
+        }
+    }  
+    </style>
+    <title>MoodSculpt</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="./index.html">
+        <img src="Mood.png" alt="Logo" class="logo-img">
+        <span>MoodSclupt</span>
+      </a></div>
+      <ul class="nav__links">
+        <li class="link"><a href="./login.html" class="link">Login</a></li>
+        <li class="link"><a href="./signup.html" class="link">Signup</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1>MoodSculpt</h1>
+          <P>Track Your Mood and Emotions with Ease. Discover new insights into your emotional well-being
+            and gain a deeper understanding of your feelings. Our platform makes it simple and intuitive to record and analyze your daily moods,
+            providing you with valuable information to enhance your overall emotional health.
+          </P>
+          <a href="./signup.html" class="button">Discover more</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
